@@ -14,7 +14,7 @@ import { EditScriptComponent } from './components/edit-script/edit-script.compon
 const routes: Routes = [
   Shell.childRoutes([
     {
-      path: 'content-management',
+      path: '',
       component: ContentManagementComponent,
       children: [
         {

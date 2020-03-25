@@ -28,6 +28,7 @@ export class AddEditCourseComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    console.log('hello add edit course');
     combineLatest([this.route.params, this.scriptContentService.scriptContent]).subscribe(([param, script]) => {
       this.script = script;
       if (param && param.courseName) {

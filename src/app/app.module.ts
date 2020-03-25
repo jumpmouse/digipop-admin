@@ -6,13 +6,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { environment } from '@env/environment';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
-import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
-import { CourseModule } from './course/course.module';
-import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CourseSectionModule } from './course-section/course-section.module';
 import { ContentManagementModule } from './content-management/content-management.module';
 
 @NgModule({
@@ -23,11 +19,7 @@ import { ContentManagementModule } from './content-management/content-management
     CoreModule,
     SharedModule,
     ShellModule,
-    HomeModule,
-    AboutModule,
     ContentManagementModule,
-    CourseModule,
-    CourseSectionModule,
     AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
