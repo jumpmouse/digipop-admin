@@ -31,6 +31,6 @@ export class EditScriptComponent implements OnInit {
 
   onSubmit(): void {
     this.scriptContentService.setScriptContent(this.content);
-    this.router.navigate(['content-management']);
+    this.router.navigate(['/']);
   }
 }

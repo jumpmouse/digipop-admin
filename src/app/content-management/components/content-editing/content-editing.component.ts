@@ -19,7 +19,6 @@ export class ContentEditingComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(param => {
-      console.log(param);
       // this.title = `${param.sectionName}_${param.subsectionName}`;
       this.title = `${param.sectionName}`;
     });
